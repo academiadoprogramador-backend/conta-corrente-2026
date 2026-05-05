@@ -1,10 +1,9 @@
 namespace ContaCorrente.ConsoleApp.Entidades;
 
-// Centraliza atributos e métodos em comum
 public class Conta
 {
     public int id;
-    public string titular;
+    public string? titular;
     public decimal saldo;
     public decimal limiteDebito;
 

@@ -1,9 +1,8 @@
 ﻿/*
-Uma conta corrente é composta por diversos atributos essenciais para sua operação.
-Ela possui um número de identificação único, um saldo disponível e um limite de débito estabelecido.
+    Uma conta corrente é composta por diversos atributos essenciais para sua operação.
+    Ela possui um ID, um saldo disponível e um limite de débito estabelecido.
 */
 
-using System.Text.Json;
 using ContaCorrente.ConsoleApp.Entidades;
 
 Conta contaTiago = new Conta();
