@@ -1,13 +1,14 @@
 namespace ContaCorrente.ConsoleApp.Entidades;
 
 // Centraliza atributos e métodos em comum
-public static class Conta
+public class Conta
 {
-    public static int id = 1;
-    public static decimal saldo = 1200;
-    public static decimal limiteDebito = 800;
+    public int id;
+    public string titular;
+    public decimal saldo;
+    public decimal limiteDebito;
 
-    public static void Sacar(decimal valorSaque)
+    public void Sacar(decimal valorSaque)
     {
         decimal limiteSaque = saldo + limiteDebito;
 
@@ -24,7 +25,7 @@ public static class Conta
         Console.ReadLine();
     }
 
-    public static void Depositar(decimal valorDeposito)
+    public void Depositar(decimal valorDeposito)
     {
         saldo += valorDeposito;
 
@@ -32,9 +33,24 @@ public static class Conta
         Console.ReadLine();
     }
 
-    public static void VisualizarSaldo()
+    public void Transferir(decimal valorTransferencia, Conta contaDestino)
     {
-        Console.WriteLine($"O saldo da conta é de: R$ {saldo}");
+        decimal limiteSaque = saldo + limiteDebito;
+
+        if (valorTransferencia > limiteSaque)
+        {
+            Console.WriteLine("Não é possível efetuar o saque. O limite foi ultrapassado.");
+            Console.ReadLine();
+            return;
+        }
+
+        this.Sacar(valorTransferencia);
+        contaDestino.Depositar(valorTransferencia);
+    }
+
+    public void VisualizarSaldo()
+    {
+        Console.WriteLine($"O saldo da conta de {titular} é de: R$ {saldo}");
         Console.ReadLine();
     }
 }
