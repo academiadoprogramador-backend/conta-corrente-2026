@@ -6,11 +6,9 @@ Desenvolvido durante o curso Back-End da [Academia do Programador](https://www.a
 
 ## Detalhes
 
-Uma conta corrente é composta por diversos atributos essenciais para sua operação. Ela possui um **número
-de identificação único**, um **saldo disponível** e um **limite de débito** estabelecido. Além disso, a conta mantém um registro de movimentações financeiras, que englobam todas as transações realizadas.
+Uma conta corrente é composta por diversos atributos essenciais para sua operação. Ela possui um **número de identificação único**, um **saldo disponível** e um **limite de débito** estabelecido. Além disso, a conta mantém um registro de movimentações financeiras, que englobam todas as transações realizadas.
 
-Cada **movimentação** registrada na conta corresponde a uma transação financeira, que pode ser classificada como **crédito** (depósito ou entrada de dinheiro) ou **débito** (saque ou retirada de fundos). Cada transação
-contém um valor associado e impacta diretamente o saldo da conta.
+Cada **movimentação** registrada na conta corresponde a uma transação financeira, que pode ser classificada como **crédito** (depósito ou entrada de dinheiro) ou **débito** (saque ou retirada de fundos). Cada transação contém um valor associado e impacta diretamente o saldo da conta.
 
 As operações disponíveis para uma conta corrente incluem:
 
@@ -19,8 +17,7 @@ As operações disponíveis para uma conta corrente incluem:
 - **Consulta de saldo**: Fornece informações atualizadas sobre o montante disponível.
 - **Transferência entre contas**: Permite a movimentação de valores entre contas correntes distintas.
 
-No que se refere aos saques, a conta corrente só pode efetuar retiradas caso o valor solicitado não ultrapasse **o limite de saque permitido**, que corresponde à soma do saldo disponível com o limite adicional concedido à
-conta.
+No que se refere aos saques, a conta corrente só pode efetuar retiradas caso o valor solicitado não ultrapasse **o limite de saque permitido**, que corresponde à soma do saldo disponível com o limite adicional concedido à conta.
 
 ## Como utilizar
 
