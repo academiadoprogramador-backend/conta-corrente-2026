@@ -8,6 +8,8 @@
     Console.WriteLine("2 - Depósito");
     Console.WriteLine("3 - Consulta de Saldo");
     Console.WriteLine("S - Sair");
+    Console.WriteLine("---------------------------------------------");
+    Console.Write("> ");
     string? opcaoMenu = Console.ReadLine();
 
     if (opcaoMenu?.ToUpper() == "S")
